@@ -1,5 +1,65 @@
 'use strict';
 
+//Калькулятор
+const repairType = document.querySelectorAll('.services-wrapper-repair-type-item');
+const repairView = document.querySelectorAll('.services-wrapper-repair-view-item');
+let range = document.querySelector('.services-wrapper-repair-square-range');
+let repairLong = document.querySelector('.services-wrapper-repair-square-total');
+let priceContent = document.querySelector('.services-wrapper-repair-phone-price');
+let priceHouse = Number(repairType[0].dataset.house);
+let priceRepair = Number(repairView[0].dataset.repair);
+let price;
+let indexValue = Number(range.value);  //значение ползунка
+
+function calcPrice(index, house, repair) {  //Считаем стоимость
+    price = index * (house + repair);
+}
+calcPrice(indexValue, priceHouse, priceRepair);
+
+repairLong.innerHTML = range.value + " м"; //Отоброжение сбоку
+
+function deleteActive (e, clas) {  
+    e.forEach(item => {
+        item.classList.remove(clas);
+    });
+}
+function addActive (e, clas) {
+    e.classList.add(clas);
+}
+function displayPriceContent(){
+    priceContent.textContent = price + " руб.";
+}
+function displayValue (){
+    repairLong.innerHTML = range.value + " м";
+    indexValue = Number(range.value);
+    calcPrice(indexValue, priceHouse, priceRepair);
+    displayPriceContent();
+} 
+displayPriceContent();
+
+repairType.forEach(function(item){
+    item.addEventListener('click', () => {
+        deleteActive(repairType, 'services-wrapper-repair-type-item-active');
+        addActive(item, 'services-wrapper-repair-type-item-active');
+        priceHouse = Number(item.dataset.house);
+        calcPrice(indexValue, priceHouse, priceRepair);
+        displayPriceContent();
+    });
+});
+
+repairView.forEach(function(item) {
+    item.addEventListener('click', () => {
+        deleteActive(repairView, 'services-wrapper-repair-view-item-active');
+        addActive(item, 'services-wrapper-repair-view-item-active');
+        priceRepair = Number(item.dataset.repair);
+        calcPrice(indexValue, priceHouse, priceRepair);
+        displayPriceContent();
+    });
+});
+
+
+
+
 //Слайдер
 const carouselDots = document.querySelector('.work-header-carousel-dots');
 const sliderWrap = document.querySelector('.work-header-sliders-wrapepr');
@@ -37,7 +97,7 @@ function nextSlide(next, offset, widthSlides, slides, sliders, index, dot) {
         addActiveDot(dot, index);
     });
 }
-nextSlide(next, offset, widthSlides, slides, sliders, index);
+
 
 function prewSlide(prew, offset, widthSlides, slides, sliders, index, dot){
     prew.addEventListener('click', () =>{
@@ -58,7 +118,7 @@ function prewSlide(prew, offset, widthSlides, slides, sliders, index, dot){
         addActiveDot(dot, index);
     });
 }
-prewSlide(prew, offset, widthSlides, slides, sliders, index);
+
 
 let dots;
 for(let i = 0; i < slides.length; i++){           // Добавляем доты динамически
@@ -92,6 +152,8 @@ dot.forEach(function (item, i) {            //Листаем слайд по н�
 
     });
 });
+prewSlide(prew, offset, widthSlides, slides, sliders, index, dot);
+nextSlide(next, offset, widthSlides, slides, sliders, index, dot);
 
 //Второй слайдер
 
