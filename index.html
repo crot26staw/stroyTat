@@ -24,7 +24,12 @@
                 </ul>
                 <div class="header-contact">
                     <a href="tel:79999999999" class="header-contact-number">+7 999 999-99-99</a>
-                    <button class="header-contact-btn">Заказать звонок</button>
+                    <button class="header-contact-btn"><a class="header-contact-btn-link" href="#book">Заказать звонок</a></button>
+                </div>
+                <div class="burger-menu">
+                    <span class="burger-menu-span burger-menu-span-1"></span>
+                    <span class="burger-menu-span burger-menu-span-2"></span>
+                    <span class="burger-menu-span burger-menu-span-3"></span>
                 </div>
             </nav>
 
@@ -33,8 +38,9 @@
                 <p>с фиксированной датой и ценой по договору</p>
                 <p>в г. Набережные Челны и пригороде</p>
                 <div class="header-home-buttons">
-                    <button class="header-home-buttons-calc">Рассчитать стоимость</button>
-                    <button class="header-home-buttons-applic">Оставить заявку</button>
+                    
+                    <button class="header-home-buttons-calc"><a class="header-home-buttons-calc-link" href="#price">Рассчитать стоимость</a></button>
+                    <button class="header-home-buttons-applic modal-form-btn">Оставить заявку</button>
                 </div>
             </section>
         </div>
@@ -62,7 +68,7 @@
                     <a class="services-work-desc" href="#">Посмотрите <br> наши работы</a>
                 </article>
 
-                <div class="services-wrapper">
+                <div id="price" class="services-wrapper">
                     <article class="services-wrapper-repair">
                         <h3 class="services-wrapper-repair-title">Посчитайте ремонт вашего дома</h3>
                         <div class="services-wrapper-repair-type">
@@ -112,8 +118,8 @@
                 </div>
 
                 <article class="services-project-btn">
-                    <button class="services-project-btn-my">У меня свой <br> дизайн-проект</button>
-                    <button class="services-project-btn-help">Нужна помощь специалиста</button>
+                    <button class="services-project-butn services-project-btn-my">У меня свой <br> дизайн-проект</button>
+                    <button class="services-project-butn services-project-btn-help">Нужна помощь специалиста</button>
                 </article>
             </div>
         </section>
@@ -206,7 +212,7 @@
                             <p>Для предпродажной подготовки</p>
                             <div class="options-wrapepr-item-descr-wrap-link"><a class="options-wrapepr-item-descr-link" href="">Посмотреть список работ</a></div>
                         </div>
-                        <button class="options-wrapepr-item-btn">заказать</button>
+                        <button class="options-wrapepr-item-btn modal-form-btn">заказать</button>
                     </div>
                     <div class="options-wrapepr-item">
                         <h3 class="options-wrapepr-item-subtitle">серьёзный <br> капитальный <br> ремонт</h3>
@@ -219,7 +225,7 @@
                             <p>Чтобы полностью отремонтировать квартиру</p>
                             <div class="options-wrapepr-item-descr-wrap-link"><a class="options-wrapepr-item-descr-link" href="">Посмотреть список работ</a></div>  
                         </div>
-                        <button class="options-wrapepr-item-btn">заказать</button>
+                        <button class="options-wrapepr-item-btn modal-form-btn">заказать</button>
                     </div>
                     <div class="options-wrapepr-item">
                         <h3 class="options-wrapepr-item-subtitle">стильный <br> дизайнерский <br> ремонт</h3>
@@ -232,7 +238,7 @@
                             <p>Для роскошной жизни</p>
                             <div class="options-wrapepr-item-descr-wrap-link"><a class="options-wrapepr-item-descr-link" href="">Посмотреть список работ</a></div>
                         </div>
-                        <button class="options-wrapepr-item-btn">заказать</button>
+                        <button class="options-wrapepr-item-btn modal-form-btn">заказать</button>
                     </div>
                 </div>
             </div>
@@ -369,7 +375,7 @@
                     <h2 class="connection-wrapepr-title">Сделай ремонт дома <br> вместе со СтройТат</h2>
                     <h3 class="connection-wrapepr-subtitle">Созвонимся, встретимся и начнём...</h3>
                     <form class="connection-wrapepr-form" action="">
-                        <input class="connection-wrapepr-form-input" name="phone" type="text" placeholder="Ваш телефон" required>
+                        <input class="connection-wrapepr-form-input" name="phone" type="number" placeholder="Ваш телефон" required>
                         <button class="connection-wrapepr-form-btn">Оставить заявку</button>
                         <div class="connection-wrapepr-form-data">Нажимая на кнопку, Вы соглашаетесь с условиями <a class="connection-wrapepr-form-data-link" href="#">обработки персональных данных</a></div>
                     </form>
@@ -499,50 +505,50 @@
                         <h3 class="repair-item-subtitle">Демонтажные работы в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <article class="repair-item">
                         <h3 class="repair-item-subtitle">Малярные работы в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <article class="repair-item">
                         <h3 class="repair-item-subtitle">Натяжные потолки в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <article class="repair-item">
                         <h3 class="repair-item-subtitle">Сантехнические работы в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <article class="repair-item">
                         <h3 class="repair-item-subtitle">Электромонтаж в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <article class="repair-item">
                         <h3 class="repair-item-subtitle">Наливные полы в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <article class="repair-item">
                         <h3 class="repair-item-subtitle">Укладка плитки в Набережных Челнах</h3>
                         <div class="repair-item-price">от 100 ₽/м2</div>
                         <div class="repair-item-descr">К ним относятся подготовка поверхностей под покрытие, подготовка отделочных материалов к нанесению, финишная покраска</div>
-                        <button class="repair-item-btn">Подробнее</button>
+                        <button class="repair-item-btn modal-form-btn">Подробнее</button>
                     </article>
                     <div class="repair-all-btn">Посмотреть <br> все</div>
                 </div>
             </div>
         </section>
 
-        <section class="call">
+        <section id="book" class="call">
             <div class="container">
                 <h2 class="call-title">Готовы обсудить ваш ремонт?</h2>
                 <div class="call-wrapper">
@@ -557,7 +563,7 @@
                     <div class="call-right-wrapper">
                         <div class="call-right-wrapper-title">Заполните форму, мы перезвоним вам и согласуем <br> дату и время визита специалиста</div>
                         <form class="call-right-wrapper-form" action="">
-                            <input class="call-right-wrapper-form-input" type="text" name="phone" placeholder="Ваш телефон" required>
+                            <input class="call-right-wrapper-form-input" type="number" name="phone" placeholder="Ваш телефон" required>
                             <button class="call-right-wrapper-form-btn">перезвоните мне</button>
                             <div class="call-right-wrapper-form-dats">Нажимая на кнопку, Вы соглашаетесь с условиями <a class="call-right-wrapper-form-dats-link" href="#">обработки персональных данных</a></div>
                         </form>
@@ -735,6 +741,59 @@
 
         <div class="footer-info">Информация, размещённая на сайте, носит ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 ГК РФ</div>
     </footer>
+
+    <div class="modal modal-not-img">
+        <form class="modal-form" action="">
+            <div class="modal-form-cross">&times;</div>
+            <h2 class="modal-form-title">Заполните форму</h2>
+            <h3 class="modal-form-subtitle">После этого мы перезвоним и обсудим все детали</h3>
+            <div class="modal-form-wrapper">
+                <input class="modal-form-input modal-form-input-name" name="name" type="text" placeholder="Имя" required>
+                <input class="modal-form-input modal-form-input-phone" type="number" name="phone" placeholder="Ваш телефон" required>
+            </div>
+            <textarea class="modal-form-comment" name="comment" id="" cols="30" rows="10" placeholder="Комментарий к заявке"></textarea>
+            <div class="modal-form-wrap">
+                <div class="modal-form-dats">Нажимая на кнопку, Вы соглашаетесь с условиями <br> <a class="modal-form-dats-link" href="#">обработки персональных данных</a></div>
+                <button class="modal-form-button">Оставить заявку</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal modal-img">
+        <form class="modal-form" action="">
+            <div class="modal-form-cross">&times;</div>
+            <h2 class="modal-form-title">Заполните форму</h2>
+            <h3 class="modal-form-subtitle">После этого мы перезвоним и обсудим все детали</h3>
+            <div class="modal-form-wrapper">
+                <input class="modal-form-input modal-form-input-name" name="name" type="text" placeholder="Имя" required>
+                <input class="modal-form-input modal-form-input-phone" type="number" name="phone" placeholder="Ваш телефон" required>
+            </div>
+            <textarea class="modal-form-comment" name="comment" id="" cols="30" rows="10" placeholder="Комментарий к заявке"></textarea>
+            <div class="modal-form-file">
+                <div class="modal-form-file-wrap">
+                    <input id="input-file" class="modal-form-file-input" name="file" type="file" required placeholder="Choose file">
+                    <label class="modal-form-file-label" for="input-file">Choose file</label>
+                </div>
+                <input class="modal-form-file-input" name="file" type="file" required placeholder="Choose file">
+                <span class="modal-form-file-text">test.png</span>
+            </div>
+            <div class="modal-form-wrap">
+                <div class="modal-form-dats">Нажимая на кнопку, Вы соглашаетесь с условиями <br> <a class="modal-form-dats-link" href="#">обработки персональных данных</a></div>
+                <button class="modal-form-button">Оставить заявку</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal modal-choise">
+        <div class="modal-choise-wrapper">
+            <div class="modal-form-cross modal-form-cross-choise">&times;</div>
+            <h2 class="modal-choise-title">У вас свой дизайн?</h2>
+            <div class="modal-choise-items">
+                <div class="modal-choise-item modal-choise-item-yes">Да</div>
+                <div class="modal-choise-item modal-choise-item-no">Нет</div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

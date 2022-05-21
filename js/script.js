@@ -194,3 +194,52 @@ ArrowBtn.forEach(function (item, i) {
     });
 });
 
+//Модальное окно формы
+
+const genButtonModal = document.querySelectorAll('.modal-form-btn');
+const myDesignBtn = document.querySelector('.services-project-btn-my');
+const helpDesignBtn = document.querySelector('.services-project-btn-help');
+const modalCross = document.querySelectorAll('.modal-form-cross');
+const modalChoise = document.querySelector('.modal-choise');
+const modalChoiseYes = document.querySelector('.modal-choise-item-yes');
+const modalChoiseNo = document.querySelector('.modal-choise-item-no');
+const modalImg = document.querySelector('.modal-img');
+const modalNotImg = document.querySelector('.modal-not-img');
+
+
+genButtonModal.forEach(btn => {         //Окно выбора
+    btn.addEventListener('click', () => {
+        modalChoise.classList.add('modal-choise-active');
+    });
+});
+modalChoiseYes.addEventListener('click', () => {     // Окно со своим дизайном
+    modalChoise.classList.remove('modal-choise-active');
+    modalImg.classList.add('modal-not-img-active');
+});
+modalChoiseNo.addEventListener('click', () => {     // Окно без своего дизайна
+    modalChoise.classList.remove('modal-choise-active');
+    modalNotImg.classList.add('modal-img-active');
+});
+modalCross.forEach(item => {      //Закрываем все окна
+   item.addEventListener('click', () => {
+    modalChoise.classList.remove('modal-choise-active');
+    modalImg.classList.remove('modal-not-img-active');
+    modalNotImg.classList.remove('modal-img-active');
+    });
+});
+myDesignBtn.addEventListener('click', () => {
+    modalImg.classList.add('modal-not-img-active');
+});
+helpDesignBtn.addEventListener('click', () => {
+    modalNotImg.classList.add('modal-img-active');
+});
+
+// Меню
+
+const burger = document.querySelector('.burger-menu');
+const menu = document.querySelector('.header-nav-lists');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('burger-menu-active');
+    menu.classList.toggle('header-nav-lists-active');
+});
