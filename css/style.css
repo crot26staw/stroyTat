@@ -1887,4 +1887,186 @@ footer{
     .footer-bot-wrapepr-item-title{
         margin-top: 40px;
     }
+    .modal-choise-wrapper{
+        width: 300px;
+        left: 41%;
+    }
+    .modal-choise-title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .modal-choise-items{
+        margin-top: 30px;
+    }
+    .modal-choise-item{
+        width: 120px;
+    }
+    .modal-form{
+        width: 300px;
+        height: auto;
+        padding: 5px;
+        left: 41%;
+
+    }
+    .modal-form-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .modal-form-subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .modal-form-wrapper{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .modal-form-input{
+        width: 280px;
+        margin-top: 15px;
+    }
+    .modal-form-cross{
+        top: -17px;
+    }
+    .modal-form-comment{
+        width: 280px;
+    }
+}
+@media( max-width: 479px){
+    .container{
+        width: 320px;
+    }
+    .header-contact-number{
+        font-size: 16px;
+        margin-right: 35px;
+    }
+    .services-work{
+        width: 300px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .services-title>p{
+        font-size: 32px;
+    }
+    .services-wrapper-repair{
+        width: 300px;
+    }
+    .services-wrapper-repair-square-range{
+        width: 180px;
+    }
+    .services-wrapper-repair-square-range::before{
+        top: 806px;
+    }
+    .services-wrapper-repair-long{
+        width: 182px;
+    }
+    .services-wrapper-repair-consent{
+        padding-left: 0;
+    }
+    .services-project-btn{
+        width: 320px;
+    }
+    .services-project-butn{
+        width: 310px;
+    }
+    .about_us-wrapper-left-title{
+        font-size: 32px;
+    }
+    .about_us-wrapper-left-item-subtitle{
+        font-size: 12px;
+    }
+    .about_us-wrapper-left-item{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .about_us-wrapper-right-item{
+        width: 140px;
+        height: 140px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: solid 1px #FF4C00;
+    }
+    .about_us-wrapper-right{
+        width: 300px;
+        height: 370px;
+    }
+    .about_us-wrapper-right-line{
+        display: none;
+    }
+    .options-wrapepr-item{
+        padding: 20px;
+        width: 300px;
+    }
+    .options-wrapepr-item-subtitle{
+        font-size: 26px;
+    }
+    .optoins-title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .work-header{
+        align-items: center;
+    }
+    .work-header-slides-img>img{
+        width: 300px;
+    }
+    .work-header-slides-item{
+        width: 300px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .work-header-sliders-wrapepr{
+        width: 300px;
+        z-index: 5;
+    }
+    .work-header-sliders-arrow-prew{
+        z-index: 10;
+    }
+    .work-header-sliders-arrow-next{
+        z-index: 10;
+    }
+    .work-header-title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .scheme-wrapper-item-head-img{
+        width: 245px;
+    }
+    .connection-wrapepr-form-input{
+        width: 290px;
+    }
+    .connection-wrapepr-form-btn{
+        width: 290px;
+    }
+    .reviews-head-btn{
+        width: 140px;
+    }
+    .reviews-head-title{
+        font-size: 30px;
+    }
+    .reviews-carousel-slides-item{
+        width: 300px;
+    }
+    .reviews-carousel-slides-img>img{
+        width: 300px;
+    }
+    .reviews-carousel-wrapper{
+        width: 320px;
+    }
+    .repair-item{
+        padding: 20px;
+        width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .repair-all-btn{
+        width: 300px;
+        margin-left: 0;
+        padding: 20px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    h1{
+        font-size: 26px;
+    }
 }
